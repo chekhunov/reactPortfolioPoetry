@@ -1,0 +1,8 @@
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: calc(33% - 20px);
+}

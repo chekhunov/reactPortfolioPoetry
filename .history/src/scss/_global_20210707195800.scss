@@ -1,0 +1,90 @@
+@import 'mixins';
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: $default;
+  background-color: #ffffff;
+  @extend %montserrat-400;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+a,
+button {
+  outline: transparent;
+  cursor: pointer;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.logo {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.title {
+  padding-bottom: 40px;
+  font-size: 32px;
+  color: $title;
+  text-align: center;
+  @extend %rollig-300;
+}
+
+.subtitle {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 300px;
+  padding-bottom: 40px;
+  font-size: 18px;
+  color: $title;
+  text-align: center;
+
+  &::before {
+    position: absolute;
+    content: '';
+    height: 1px;
+    max-width: 50px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    pb10px
+    background-color: red;
+  }
+}
+
+.link {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 123px;
+  left: 0;
+  right: 0;
+  font-size: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 0;
+}
+
+.wrapper {
+  height: 100%;
+}

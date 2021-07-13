@@ -1,0 +1,20 @@
+.poetry {
+  position: relative;
+
+  &::before {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    background-image: url('../assets/icons/rosebg.svg');
+    height: 60px;
+    width: 40px;
+  }
+}
+
+.img {
+  width: 100%;
+  max-height: 30%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

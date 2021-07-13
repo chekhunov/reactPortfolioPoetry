@@ -1,0 +1,33 @@
+@import "../scss/vars.scss";
+
+.header {
+  position: relative;
+  background-color: #a22626;
+  box-shadow: 0 5px 5px -5px rgba(0, 0, 0, .5);
+}
+
+.item {
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.3s;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &:hover {
+    color: #00d9db;
+  }
+}
+
+.logoLeft {
+  font-size: 30px;
+  color: #fff;
+}
+
+.logoRight {
+  font-size: 30px;
+  @extend %montserrat-700;
+  color: #fff;
+}

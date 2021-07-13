@@ -1,0 +1,22 @@
+.best{
+  width: 100%;
+  padding: 0 40px;
+}
+.inner {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.item {
+  width: calc(33% - 20px);
+  padding: 15px;
+  background-color: rgb(255, 233, 233);
+    border-radius: 20px;
+}
+
+.text {
+  text-transform: lowercase;
+}

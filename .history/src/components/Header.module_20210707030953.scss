@@ -1,0 +1,42 @@
+@import "../scss/vars.scss";
+
+.header {
+  // position: relative;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #a22626;
+  box-shadow: 0 5px 5px -5px rgba(0, 0, 0, .5);
+  z-index: 10;
+}
+.img {
+display: inline-block;
+margin-right: 10px;
+    margin-bottom: 1px;
+}
+
+.item {
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.3s;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &:hover {
+    color: #00d9db;
+  }
+}
+
+.logoLeft {
+  font-size: 30px;
+  color: #fff;
+}
+
+.logoRight {
+  font-size: 30px;
+  @extend %montserrat-700;
+  color: #fff;
+}
