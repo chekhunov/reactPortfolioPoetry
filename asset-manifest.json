@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/reactPortfolioPoetry/static/css/main.57462641.chunk.css",
-    "main.js": "/reactPortfolioPoetry/static/js/main.813f1a09.chunk.js",
-    "main.js.map": "/reactPortfolioPoetry/static/js/main.813f1a09.chunk.js.map",
+    "main.js": "/reactPortfolioPoetry/static/js/main.b8621658.chunk.js",
+    "main.js.map": "/reactPortfolioPoetry/static/js/main.b8621658.chunk.js.map",
     "runtime-main.js": "/reactPortfolioPoetry/static/js/runtime-main.2bfe3526.js",
     "runtime-main.js.map": "/reactPortfolioPoetry/static/js/runtime-main.2bfe3526.js.map",
     "static/js/2.4eda36c0.chunk.js": "/reactPortfolioPoetry/static/js/2.4eda36c0.chunk.js",
@@ -11,13 +11,18 @@
     "static/css/main.57462641.chunk.css.map": "/reactPortfolioPoetry/static/css/main.57462641.chunk.css.map",
     "static/js/2.4eda36c0.chunk.js.LICENSE.txt": "/reactPortfolioPoetry/static/js/2.4eda36c0.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/reactPortfolioPoetry/static/media/Raleway-Light.f25e9b3a.ttf",
+    "static/media/about.15f46e3a.jpg": "/reactPortfolioPoetry/static/media/about.15f46e3a.jpg",
     "static/media/Best.module.scss": "/reactPortfolioPoetry/static/media/decortop-left.ea24bd6b.svg",
+    "static/media/flavor1.cc48c835.jpg": "/reactPortfolioPoetry/static/media/flavor1.cc48c835.jpg",
+    "static/media/flowers.64ca3e2b.png": "/reactPortfolioPoetry/static/media/flowers.64ca3e2b.png",
+    "static/media/new.a8cbd34c.jpg": "/reactPortfolioPoetry/static/media/new.a8cbd34c.jpg",
+    "static/media/rosa.bd29d795.svg": "/reactPortfolioPoetry/static/media/rosa.bd29d795.svg",
     "static/media/About.module.scss": "/reactPortfolioPoetry/static/media/svgdecor.6804dcf7.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.2bfe3526.js",
     "static/js/2.4eda36c0.chunk.js",
     "static/css/main.57462641.chunk.css",
-    "static/js/main.813f1a09.chunk.js"
+    "static/js/main.b8621658.chunk.js"
   ]
 }
