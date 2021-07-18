@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/reactPortfolioPoetry/static/css/main.57462641.chunk.css",
-    "main.js": "/reactPortfolioPoetry/static/js/main.9cf64ce9.chunk.js",
-    "main.js.map": "/reactPortfolioPoetry/static/js/main.9cf64ce9.chunk.js.map",
+    "main.js": "/reactPortfolioPoetry/static/js/main.aab25d3c.chunk.js",
+    "main.js.map": "/reactPortfolioPoetry/static/js/main.aab25d3c.chunk.js.map",
     "runtime-main.js": "/reactPortfolioPoetry/static/js/runtime-main.2bfe3526.js",
     "runtime-main.js.map": "/reactPortfolioPoetry/static/js/runtime-main.2bfe3526.js.map",
-    "static/js/2.0ba095a6.chunk.js": "/reactPortfolioPoetry/static/js/2.0ba095a6.chunk.js",
-    "static/js/2.0ba095a6.chunk.js.map": "/reactPortfolioPoetry/static/js/2.0ba095a6.chunk.js.map",
+    "static/js/2.b5ad739a.chunk.js": "/reactPortfolioPoetry/static/js/2.b5ad739a.chunk.js",
+    "static/js/2.b5ad739a.chunk.js.map": "/reactPortfolioPoetry/static/js/2.b5ad739a.chunk.js.map",
     "index.html": "/reactPortfolioPoetry/index.html",
     "static/css/main.57462641.chunk.css.map": "/reactPortfolioPoetry/static/css/main.57462641.chunk.css.map",
-    "static/js/2.0ba095a6.chunk.js.LICENSE.txt": "/reactPortfolioPoetry/static/js/2.0ba095a6.chunk.js.LICENSE.txt",
+    "static/js/2.b5ad739a.chunk.js.LICENSE.txt": "/reactPortfolioPoetry/static/js/2.b5ad739a.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/reactPortfolioPoetry/static/media/Raleway-Light.f25e9b3a.ttf",
     "static/media/about.15f46e3a.jpg": "/reactPortfolioPoetry/static/media/about.15f46e3a.jpg",
     "static/media/Best.module.scss": "/reactPortfolioPoetry/static/media/decortop-left.ea24bd6b.svg",
@@ -21,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.2bfe3526.js",
-    "static/js/2.0ba095a6.chunk.js",
+    "static/js/2.b5ad739a.chunk.js",
     "static/css/main.57462641.chunk.css",
-    "static/js/main.9cf64ce9.chunk.js"
+    "static/js/main.aab25d3c.chunk.js"
   ]
 }
