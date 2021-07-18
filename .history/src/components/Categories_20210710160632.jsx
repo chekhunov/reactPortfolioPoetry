@@ -17,12 +17,12 @@ const Categories = React.memo(function Categories({ items, onClickItem }) {
           Все
         </li>
         {items && //проверка на null
-          items.map((name, index) => (
+          items.map((value, index) => (
             <li
               className={activeItem === index ? 'active' : ''}
               onClick={() => onSelectItem(index)}
-              key={`${name}_${index}`}>
-              {name}
+              key={`${value}_${index}`}>
+              {value}
             </li>
           ))}
       </ul>

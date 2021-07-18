@@ -2,12 +2,12 @@ import React from 'react';
 
 import { Route } from 'react-router-dom';
 import { Poetry } from './index';
-import { Top, Best, Site } from '../components/';
+import { Top, Best, Site, About } from '../components/';
+import {Gallery} from '.'
 
 import style from './Home.module.scss';
-import About from '../components/About';
 
-function Home() {
+function Home({isLoading, setIsLoading}) {
   return (
     <div className={style.wrapper}>
       <Route path="/" exact>
@@ -18,8 +18,9 @@ function Home() {
 
       <Route path="/about" component={About} />
 
-      <Route path="/poetry" component={Poetry} />
+      <Route path="/poetry" render={()=>(<Poetry loading={isLoading} setLoading={setIsLoading} />)} />
 
+      <Route path="/gallery" component={Gallery} />
       <Best />
     </div>
   );

@@ -17,12 +17,12 @@ import React from 'react';
 //       <div className="categories">
 //         <ul>
 //           <li>Все</li>
-//           {items.map((name, index) => (
+//           {items.map((value, index) => (
 //             <li
 //               className={this.state.activeItem === index ? 'active' : ''}
 //               onClick={() => this.onSelectItem(index)}
-//               key={`${name}_${index}`}>
-//               {name}
+//               key={`${value}_${index}`}>
+//               {value}
 //             </li>
 //           ))}
 //         </ul>
@@ -50,12 +50,12 @@ const Categories = React.memo(function Categories({ items, onClickItem }) {
           Все
         </li>
         {items && //проверка на null
-          items.map((name, index) => (
+          items.map((value, index) => (
             <li
               className={activeItem === index ? 'active' : ''}
               onClick={() => onSelectItem(index)}
-              key={`${name}_${index}`}>
-              {name}
+              key={`${value}_${index}`}>
+              {value}
             </li>
           ))}
       </ul>

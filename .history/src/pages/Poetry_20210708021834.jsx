@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import style from './Poetry.module.scss';
-import classNames from 'classnames';
+import classNames from 'classNames';
 
 function Poetry() {
   const [contentItem, setContentItem] = React.useState([]);

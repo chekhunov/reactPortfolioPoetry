@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DBNavigator.Project.DataEditorManager">
+  <component value="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
     <value-preview-text-wrapping value="true" />
     <value-preview-pinned value="false" />
   </component>
-  <component name="DBNavigator.Project.DataExportManager">
+  <component value="DBNavigator.Project.DataExportManager">
     <export-instructions>
       <create-header value="true" />
       <friendly-headers value="false" />
       <quote-values-containing-separator value="true" />
       <quote-all-values value="false" />
       <value-separator value="" />
-      <file-name value="" />
+      <file-value value="" />
       <file-location value="" />
       <scope value="GLOBAL" />
       <destination value="FILE" />
@@ -20,22 +20,22 @@
       <charset value="UTF-8" />
     </export-instructions>
   </component>
-  <component name="DBNavigator.Project.DatabaseBrowserManager">
+  <component value="DBNavigator.Project.DatabaseBrowserManager">
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
     <loaded-nodes />
   </component>
-  <component name="DBNavigator.Project.DatabaseFileManager">
+  <component value="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
-  <component name="DBNavigator.Project.EditorStateManager">
+  <component value="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
   </component>
-  <component name="DBNavigator.Project.ExecutionManager">
-    <retain-sticky-names value="false" />
+  <component value="DBNavigator.Project.ExecutionManager">
+    <retain-sticky-values value="false" />
   </component>
-  <component name="DBNavigator.Project.MethodExecutionManager">
+  <component value="DBNavigator.Project.MethodExecutionManager">
     <method-browser />
     <execution-history>
       <group-entries value="true" />
@@ -43,17 +43,17 @@
     </execution-history>
     <argument-values-cache />
   </component>
-  <component name="DBNavigator.Project.ObjectDependencyManager">
+  <component value="DBNavigator.Project.ObjectDependencyManager">
     <last-used-dependency-type value="INCOMING" />
   </component>
-  <component name="DBNavigator.Project.ObjectQuickFilterManager">
+  <component value="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
     <filters />
   </component>
-  <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
+  <component value="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
     <recently-used-interfaces />
   </component>
-  <component name="DBNavigator.Project.Settings">
+  <component value="DBNavigator.Project.Settings">
     <connections />
     <browser-settings>
       <general>
@@ -63,69 +63,69 @@
       </general>
       <filters>
         <object-type-filter>
-          <object-type name="SCHEMA" enabled="true" />
-          <object-type name="USER" enabled="true" />
-          <object-type name="ROLE" enabled="true" />
-          <object-type name="PRIVILEGE" enabled="true" />
-          <object-type name="CHARSET" enabled="true" />
-          <object-type name="TABLE" enabled="true" />
-          <object-type name="VIEW" enabled="true" />
-          <object-type name="MATERIALIZED_VIEW" enabled="true" />
-          <object-type name="NESTED_TABLE" enabled="true" />
-          <object-type name="COLUMN" enabled="true" />
-          <object-type name="INDEX" enabled="true" />
-          <object-type name="CONSTRAINT" enabled="true" />
-          <object-type name="DATASET_TRIGGER" enabled="true" />
-          <object-type name="DATABASE_TRIGGER" enabled="true" />
-          <object-type name="SYNONYM" enabled="true" />
-          <object-type name="SEQUENCE" enabled="true" />
-          <object-type name="PROCEDURE" enabled="true" />
-          <object-type name="FUNCTION" enabled="true" />
-          <object-type name="PACKAGE" enabled="true" />
-          <object-type name="TYPE" enabled="true" />
-          <object-type name="TYPE_ATTRIBUTE" enabled="true" />
-          <object-type name="ARGUMENT" enabled="true" />
-          <object-type name="DIMENSION" enabled="true" />
-          <object-type name="CLUSTER" enabled="true" />
-          <object-type name="DBLINK" enabled="true" />
+          <object-type value="SCHEMA" enabled="true" />
+          <object-type value="USER" enabled="true" />
+          <object-type value="ROLE" enabled="true" />
+          <object-type value="PRIVILEGE" enabled="true" />
+          <object-type value="CHARSET" enabled="true" />
+          <object-type value="TABLE" enabled="true" />
+          <object-type value="VIEW" enabled="true" />
+          <object-type value="MATERIALIZED_VIEW" enabled="true" />
+          <object-type value="NESTED_TABLE" enabled="true" />
+          <object-type value="COLUMN" enabled="true" />
+          <object-type value="INDEX" enabled="true" />
+          <object-type value="CONSTRAINT" enabled="true" />
+          <object-type value="DATASET_TRIGGER" enabled="true" />
+          <object-type value="DATABASE_TRIGGER" enabled="true" />
+          <object-type value="SYNONYM" enabled="true" />
+          <object-type value="SEQUENCE" enabled="true" />
+          <object-type value="PROCEDURE" enabled="true" />
+          <object-type value="FUNCTION" enabled="true" />
+          <object-type value="PACKAGE" enabled="true" />
+          <object-type value="TYPE" enabled="true" />
+          <object-type value="TYPE_ATTRIBUTE" enabled="true" />
+          <object-type value="ARGUMENT" enabled="true" />
+          <object-type value="DIMENSION" enabled="true" />
+          <object-type value="CLUSTER" enabled="true" />
+          <object-type value="DBLINK" enabled="true" />
         </object-type-filter>
       </filters>
       <sorting>
-        <object-type name="COLUMN" sorting-type="NAME" />
-        <object-type name="FUNCTION" sorting-type="NAME" />
-        <object-type name="PROCEDURE" sorting-type="NAME" />
-        <object-type name="ARGUMENT" sorting-type="POSITION" />
+        <object-type value="COLUMN" sorting-type="value" />
+        <object-type value="FUNCTION" sorting-type="value" />
+        <object-type value="PROCEDURE" sorting-type="value" />
+        <object-type value="ARGUMENT" sorting-type="POSITION" />
       </sorting>
       <default-editors>
-        <object-type name="VIEW" editor-type="SELECTION" />
-        <object-type name="PACKAGE" editor-type="SELECTION" />
-        <object-type name="TYPE" editor-type="SELECTION" />
+        <object-type value="VIEW" editor-type="SELECTION" />
+        <object-type value="PACKAGE" editor-type="SELECTION" />
+        <object-type value="TYPE" editor-type="SELECTION" />
       </default-editors>
     </browser-settings>
     <navigation-settings>
       <lookup-filters>
         <lookup-objects>
-          <object-type name="SCHEMA" enabled="true" />
-          <object-type name="USER" enabled="false" />
-          <object-type name="ROLE" enabled="false" />
-          <object-type name="PRIVILEGE" enabled="false" />
-          <object-type name="CHARSET" enabled="false" />
-          <object-type name="TABLE" enabled="true" />
-          <object-type name="VIEW" enabled="true" />
-          <object-type name="MATERIALIZED VIEW" enabled="true" />
-          <object-type name="INDEX" enabled="true" />
-          <object-type name="CONSTRAINT" enabled="true" />
-          <object-type name="DATASET TRIGGER" enabled="true" />
-          <object-type name="DATABASE TRIGGER" enabled="true" />
-          <object-type name="SYNONYM" enabled="false" />
-          <object-type name="SEQUENCE" enabled="true" />
-          <object-type name="PROCEDURE" enabled="true" />
-          <object-type name="FUNCTION" enabled="true" />
-          <object-type name="PACKAGE" enabled="true" />
-          <object-type name="TYPE" enabled="true" />
-          <object-type name="DIMENSION" enabled="false" />
-          <object-type name="CLUSTER" enabled="false" />
-          <object-type name="DBLINK" enabled="true" />
+          <object-type value="SCHEMA" enabled="true" />
+          <object-type value="USER" enabled="false" />
+          <object-type value="ROLE" enabled="false" />
+          <object-type value="PRIVILEGE" enabled="false" />
+          <object-type value="CHARSET" enabled="false" />
+          <object-type value="TABLE" enabled="true" />
+          <object-type value="VIEW" enabled="true" />
+          <object-type value="MATERIALIZED VIEW" enabled="true" />
+          <object-type value="INDEX" enabled="true" />
+          <object-type value="CONSTRAINT" enabled="true" />
+          <object-type value="DATASET TRIGGER" enabled="true" />
+          <object-type value="DATABASE TRIGGER" enabled="true" />
+          <object-type value="SYNONYM" enabled="false" />
+          <object-type value="SEQUENCE" enabled="true" />
+          <object-type value="PROCEDURE" enabled="true" />
+          <object-type value="FUNCTION" enabled="true" />
+          <object-type value="PACKAGE" enabled="true" />
+          <object-type value="TYPE" enabled="true" />
+          <object-type value="DIMENSION" enabled="false" />
+          <object-type value="CLUSTER" enabled="false" />
+          <object-type value="DBLINK" enabled="true" />
         </lookup-objects>
         <force-database-load value="false" />
         <prompt-connection-selection value="true" />
@@ -142,7 +142,7 @@
         <max-sorting-columns value="4" />
       </sorting>
       <tracking-columns>
-        <columnNames value="" />
+        <columnvalues value="" />
         <visible value="true" />
         <editable value="false" />
       </tracking-columns>
@@ -173,20 +173,20 @@
       </filters>
       <qualified-text-editor text-length-threshold="300">
         <content-types>
-          <content-type name="Text" enabled="true" />
-          <content-type name="XML" enabled="true" />
-          <content-type name="DTD" enabled="true" />
-          <content-type name="HTML" enabled="true" />
-          <content-type name="XHTML" enabled="true" />
-          <content-type name="CSS" enabled="true" />
-          <content-type name="SQL" enabled="true" />
-          <content-type name="PL/SQL" enabled="true" />
-          <content-type name="JavaScript" enabled="true" />
-          <content-type name="JSON" enabled="true" />
-          <content-type name="JSON5" enabled="true" />
-          <content-type name="JSP" enabled="true" />
-          <content-type name="JSPx" enabled="true" />
-          <content-type name="YAML" enabled="true" />
+          <content-type value="Text" enabled="true" />
+          <content-type value="XML" enabled="true" />
+          <content-type value="DTD" enabled="true" />
+          <content-type value="HTML" enabled="true" />
+          <content-type value="XHTML" enabled="true" />
+          <content-type value="CSS" enabled="true" />
+          <content-type value="SQL" enabled="true" />
+          <content-type value="PL/SQL" enabled="true" />
+          <content-type value="JavaScript" enabled="true" />
+          <content-type value="JSON" enabled="true" />
+          <content-type value="JSON5" enabled="true" />
+          <content-type value="JSP" enabled="true" />
+          <content-type value="JSPx" enabled="true" />
+          <content-type value="YAML" enabled="true" />
         </content-types>
       </qualified-text-editor>
       <record-navigation>
@@ -423,7 +423,7 @@
         <lookup-ddl-files value="true" />
         <create-ddl-files value="false" />
         <synchronize-ddl-files value="true" />
-        <use-qualified-names value="false" />
+        <use-qualified-values value="false" />
         <make-scripts-rerunnable value="true" />
       </general>
     </ddl-file-settings>
@@ -436,10 +436,10 @@
       </regional-settings>
       <environment>
         <environment-types>
-          <environment-type id="development" name="Development" description="Development environment" color="-2430209/-12296320" readonly-code="false" readonly-data="false" />
-          <environment-type id="integration" name="Integration" description="Integration environment" color="-2621494/-12163514" readonly-code="true" readonly-data="false" />
-          <environment-type id="production" name="Production" description="Productive environment" color="-11574/-10271420" readonly-code="true" readonly-data="true" />
-          <environment-type id="other" name="Other" description="" color="-1576/-10724543" readonly-code="false" readonly-data="false" />
+          <environment-type id="development" value="Development" description="Development environment" color="-2430209/-12296320" readonly-code="false" readonly-data="false" />
+          <environment-type id="integration" value="Integration" description="Integration environment" color="-2621494/-12163514" readonly-code="true" readonly-data="false" />
+          <environment-type id="production" value="Production" description="Productive environment" color="-11574/-10271420" readonly-code="true" readonly-data="true" />
+          <environment-type id="other" value="Other" description="" color="-1576/-10724543" readonly-code="false" readonly-data="false" />
         </environment-types>
         <visibility-settings>
           <connection-tabs value="true" />
@@ -451,7 +451,7 @@
       </environment>
     </general-settings>
   </component>
-  <component name="DBNavigator.Project.StatementExecutionManager">
+  <component value="DBNavigator.Project.StatementExecutionManager">
     <execution-variables />
   </component>
 </project>

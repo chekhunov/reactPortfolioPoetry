@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './Best.module.scss';
 import axios from 'axios';
-import classNames from 'classnames';
+import classNames from 'classNames';
 
 const Best = (props) => {
   const [bestitem, setBestitem] = React.useState([]);

@@ -1,18 +1,21 @@
 import React from 'react';
 import { BrowserRouter as Route } from 'react-router-dom';
-import { Header } from './components';
+import { Header,Preloader } from './components';
 import { Home } from './pages';
 
+
 const App = () => {
-  return (
-    <div className="wrapper">
-      <Header />
+  const [isLoading, setIsLoading] = React.useState(false);
 
-      <Home />
+    return ( <div className = "wrapper" >
 
-      
-    </div>
-  );
+        <Header setIsLoading={setIsLoading} / >
+          {isLoading ?
+          (<Preloader isLoading={isLoading} />) :
+        (<Home isLoading={isLoading} setIsLoading={setIsLoading} />)}
+
+        </div>
+    );
 };
 
 export default App;

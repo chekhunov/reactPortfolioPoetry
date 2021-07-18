@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import style from './Header.module.scss';
-import classNames from 'classnames';
+import classNames from 'classNames';
 import Categories from './Categories';
 
 function Header(props) {
@@ -21,7 +21,7 @@ function Header(props) {
         </Link>
 
         <Categories
-          onClickItem={(name) => console.log(name)}
+          onClickItem={(value) => console.log(value)}
           items={['Главная', 'Обо мне', 'Поэзия', 'Блог', 'Контакты']}
         />
 

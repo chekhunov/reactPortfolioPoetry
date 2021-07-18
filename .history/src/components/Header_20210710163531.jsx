@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import style from './Header.module.scss';
-import classNames from 'classnames';
+import classNames from 'classNames';
 
 function Header(props) {
   const [activeItem, setActiveItem] = React.useState(false);

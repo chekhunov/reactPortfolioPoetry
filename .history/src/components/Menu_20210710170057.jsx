@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './Menu.module.scss';
 import { Link } from 'react-router-dom';
-import classNames from 'classnames';
+import classNames from 'classNames';
 
 const Menu = (items) => {
   const [selection, setSelection] = useState([]);

@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import style from './Poetry.module.scss';
-import classNames from 'classnames';
+import classNames from 'classNames';
 
 function Poetry() {
   const [contentItem, setContentItem] = React.useState([]);
@@ -31,7 +31,7 @@ function Poetry() {
                   <div className={style.img}></div>
                   <div className={style.title}>{item.title}</div>
                   {whomeItem.map((user) =>
-                    item.id_whom === user.id ? <div className={style.whom}>{user.name} </div> : '',
+                    item.id_whom === user.id ? <div className={style.whom}>{user.value} </div> : '',
                   )}
                   {/* <img className={style.icon} src="img/icons/rose-text.svg" alt="" /> */}
                   <div className={style.text}>{item.text}</div>

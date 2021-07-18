@@ -18,6 +18,7 @@ function Top() {
           <h1 className={style.subtitle}>поэтесса стихотворений в торжественном стиле!</h1>
         </div>
       </div>
+      <img className={style.img} src="img/flowers.png" alt="photo user" />
     </section>
   );
 }

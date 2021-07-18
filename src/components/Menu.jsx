@@ -2,37 +2,13 @@ import React from 'react';
 import style from './Menu.module.scss';
 import { Link } from 'react-router-dom';
 import classNames from 'classnames';
-const items = [
-  {
-    id: 0,
-    value: 'Главная',
-    link: '',
-  },
-  {
-    id: 1,
-    value: 'Обо мне',
-    link: 'about',
-  },
-  {
-    id: 2,
-    value: 'Поэзия',
-    link: 'poetry',
-  },
-  {
-    id: 3,
-    value: 'Блог',
-    link: 'blog',
-  },
-  {
-    id: 4,
-    value: 'Контакты',
-    link: 'contacts',
-  },
-];
 
-const Menu = (multiSelect = false) => {
+const Menu = ({multiSelect = false, items}) => {
   const [selection, setSelection] = React.useState([]);
   const [activeId, setActiveId] = React.useState(0);
+
+
+
   function handleOnClick(item) {
     if (!selection.some((current) => current.id === item.id)) {
       if (!multiSelect) {
@@ -48,12 +24,15 @@ const Menu = (multiSelect = false) => {
   }
 
   function clickItem(val) {
-    setActiveId(val);
+      setActiveId(val);
+
   }
+
   // console.log(activeId);
+  // console.log(isClickLogo)
   return (
-    <ul className={style.menu}>
-      {items.map((item, index) => (
+    <ul className={classNames(style.menu, "wrapper-menu")}>
+      {items && items.map((item, index) => (
         <Link to={`/${item.link}`}>
           <li
             className={classNames(style.item, item.id === activeId ? style.active : '')}
