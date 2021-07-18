@@ -4,7 +4,7 @@ import { Header,Preloader } from './components';
 import { Home } from './pages';
 
 
-const App = () => {
+const App = ({appState}) => {
   const [isLoading, setIsLoading] = React.useState(false);
 
     return ( <div className = "wrapper" >
@@ -12,7 +12,7 @@ const App = () => {
         <Header setIsLoading={setIsLoading} / >
           {isLoading ?
           (<Preloader isLoading={isLoading} />) :
-        (<Home isLoading={isLoading} setIsLoading={setIsLoading} />)}
+        (<Home isLoading={isLoading} setIsLoading={setIsLoading} appState={appState} />)}
 
         </div>
     );

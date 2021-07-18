@@ -2,17 +2,19 @@ import React from 'react';
 import style from './Best.module.scss';
 import axios from 'axios';
 import classNames from 'classnames';
+// import rosatext from '../assets/rosa-text.svg';
 
 const Best = (props) => {
   const [bestitem, setBestitem] = React.useState([]);
 
   React.useEffect(() => {
     axios.get('top.json').then((res) => {
-      setBestitem(res.data);
+      setBestitem(res.data.top);
     });
   }, []);
 
-  // console.log(props);
+// const fil = bestitem.map((obj)=> obj.top)
+  // console.log(bestitem);
   return (
     <section
       className={style.best}
@@ -36,7 +38,7 @@ const Best = (props) => {
               <div className={style.meta}>
                 <div className={style.title}>{item.title}</div>
                 <div className={style.whom}>{item.id_whom}</div>
-                <img className={style.icon} src="img/icons/rose-text.svg" alt="rose" />
+                <img className={style.icon} src="../assets/rosa-text.svg" alt="rose" />
               </div>
 
               <div className={style.innerText}>

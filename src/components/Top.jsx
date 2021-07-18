@@ -1,5 +1,6 @@
 import React from 'react';
 import style from './Top.module.scss';
+import flowers from '../assets/flowers.png';
 
 function Top() {
   return (
@@ -18,7 +19,7 @@ function Top() {
           <h1 className={style.subtitle}>поэтесса стихотворений в торжественном стиле!</h1>
         </div>
       </div>
-      <img className={style.img} src="img/flowers.png" alt="photo user" />
+      <img className={style.img} src={flowers} alt="photo user" />
     </section>
   );
 }

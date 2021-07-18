@@ -7,21 +7,22 @@ import {Gallery} from '.'
 
 import style from './Home.module.scss';
 
-function Home({isLoading, setIsLoading}) {
+function Home({isLoading, setIsLoading, appState}) {
+  console.log(appState.content)
   return (
     <div className={style.wrapper}>
-      <Route path="/" exact>
+      <Route path="/reactPortfolioPoetry" exact>
         <Top />
       </Route>
 
-      <Route path="/" exact component={Site} />
+      <Route path="/reactPortfolioPoetry" exact component={Site} />
 
       <Route path="/about" component={About} />
 
-      <Route path="/poetry" render={()=>(<Poetry loading={isLoading} setLoading={setIsLoading} />)} />
+      <Route path="/poetry" render={()=>(<Poetry loading={isLoading} setLoading={setIsLoading} appState={appState}/>)} />
 
       <Route path="/gallery" component={Gallery} />
-      <Best />
+      // <Best />
     </div>
   );
 }

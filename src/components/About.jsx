@@ -1,18 +1,20 @@
 import React from 'react';
 import style from './About.module.scss';
+import about from '../assets/about.jpg';
+import abouttop from '../assets/new.jpg';
 
 const About = () => {
   return (
     <section id="about" className={style.about}>
       <div className={style.meta}>
         <div className={style.title}>Обо мне</div>
-        <img className={style.imgBg} src="img/new.jpg" alt="bg" />
+        <img className={style.imgBg} src={abouttop} alt="bg" />
       </div>
       <div className={style.inner}>
         <div className="container">
           <div className={style.innerText}>
             <div className="title">Автобиография</div>
-            <img className={style.img} src="img/about.jpg" alt="photo user" />
+            <img className={style.img} src={about} alt="photo user" />
             <div className={style.text}>
               Родилась 7 августа 1955 г. на Урале, в г. Верхотуре Свердловской области. Прожила там
               восемь лет, закончила два класса. После переехала с родителями в Казахстан г.

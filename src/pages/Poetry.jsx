@@ -3,57 +3,45 @@ import axios from 'axios';
 import style from './Poetry.module.scss';
 import classNames from 'classnames';
 import {Menu} from '../components'
+import flavor1 from '../assets/flavor1.jpg';
 
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-function Poetry({loading, setLoading}) {
-  const [contentItem, setContentItem] = React.useState([]);
-  const [whomeItem, setWhomeItem] = React.useState([]);
-  const [whomeMenu, setWhomeMenu] = React.useState([]);
-  const [cartItems, setCartItems] = React.useState([]);
+function Poetry({loading, setLoading, appState}) {
+  const [contentItem, setContentItem] = React.useState(appState.content);
+  const [whomeItem, setWhomeItem] = React.useState(appState.whome);
+  const [whomeMenu, setWhomeMenu] = React.useState(appState.whomeMenu);
+  const [activeId, setActiveId] = React.useState(0);
+  // const [cartItems, setCartItems] = React.useState([]);
   // const [isClickLogo, setIsClickLogo] = React.useState(false);//заглушка изза переиспользования меню
   // const[isLoading, setIsLoading] = React.useState(false);
 
-  React.useEffect(() => {
-
-    // axios.get('content.json').then((res) => {
-    //   // setIsLoading(true);
-    //   setContentItem(res.data);
-    //   // setIsLoading(false);
-    // });
-    // axios.get('whome.json').then((res) => {
-    //   setWhomeItem(res.data);
-    // });
-
-    async function fetchData() {
-
-      try {
-        // setLoading(true);
-// ;
-        const whome = await axios.get('whome.json');
-        const whoMenu = await axios.get('whomeMenu.json');
-        const content = await axios.get('content.json');
-
-        // delay(10000);
-        // setLoading(false);
-
-        setWhomeItem(whome.data);
-        setWhomeMenu(whoMenu.data);
-        setContentItem(content.data);
-      } catch (e) {
-        alert('Не удалось загрузить стихи')
-      }
-    }
-    // setLoading(true);
-    fetchData();
-
-
-  }, []);
-
+  // React.useEffect(() => {
+  //
+  //   async function fetchData() {
+  //
+  //     try {
+  //       const whome = await axios.get('top.json');
+  //       const whomemenu = await axios.get('top.json');
+  //       const content = await axios.get('top.json');
+  //
+  //       // delay(10000);
+  //       // setLoading(false);
+  //
+  //       setWhomeItem(whome.data.whome);
+  //       setWhomeMenu(whomemenu.data.whomemenu);
+  //       setContentItem(content.data.poetry);
+  //     } catch (e) {
+  //       alert('Не удалось загрузить стихи')
+  //     }
+  //   }
+  //   fetchData();
+  // },[]);
+// console.log(contentItem)
   return (
     <section className={classNames(style.poetry, "poetry")}>
       <div className={style.meta}>
-        <img className={style.img} src="img/flavor1.jpg" alt="bg" />
+        <img className={style.img} src={flavor1} alt="bg" />
         <div className={classNames(style.headline, 'title')}>Поэзия</div>
       </div>
       <div className={style.topMenu}></div>
@@ -62,7 +50,7 @@ function Poetry({loading, setLoading}) {
           {/* <div className="subtitle"></div> */}
 
 
-          <Menu items={whomeMenu}/>
+          <Menu items={whomeMenu} activeId={activeId} setActiveId={setActiveId}/>
 
           <div className={style.inner}>
             {contentItem.map((item, index) => (
