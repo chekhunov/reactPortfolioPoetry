@@ -15,8 +15,6 @@ function Home({isLoading, setIsLoading, appState}) {
         <Top />
       </Route>
 
-      <Route path="/reactPortfolioPoetry" exact component={Site} />
-
       <Route path="/about" component={About} />
 
       <Route path="/poetry" render={()=>(<Poetry loading={isLoading} setLoading={setIsLoading} appState={appState}/>)} />

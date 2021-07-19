@@ -11,26 +11,31 @@ const items = [
     id: 0,
     value: 'Главная',
     link: 'reactPortfolioPoetry',
+
   },
   {
     id: 1,
     value: 'Обо мне',
     link: 'about',
+
   },
   {
     id: 2,
     value: 'Поэзия',
     link: 'poetry',
+
   },
   {
     id: 3,
     value: 'Галлерея',
     link: 'gallery',
+
   },
   {
     id: 4,
     value: 'Контакты',
     link: 'contacts',
+
   },
 ];
 
@@ -40,7 +45,9 @@ function Header({}) {
 
   function activeLogo(){
     setActiveId(0);
+    document.body.classList.add('overflowe');
   }
+
   // console.log(isClickLogo,'header')
   return (
     <header className={classNames(style.header, 'p-20')}>

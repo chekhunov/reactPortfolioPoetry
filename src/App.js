@@ -3,9 +3,10 @@ import { BrowserRouter as Route } from 'react-router-dom';
 import { Header,Preloader } from './components';
 import { Home } from './pages';
 
-
 const App = ({appState}) => {
   const [isLoading, setIsLoading] = React.useState(false);
+
+
 
     return ( <div className = "wrapper" >
 

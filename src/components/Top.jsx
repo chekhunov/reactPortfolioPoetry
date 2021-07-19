@@ -5,14 +5,7 @@ import flowers from '../assets/flowers.png';
 function Top() {
   return (
     <section
-      className={style.top}
-      // style={{
-      //     backgroundImage   : "url(/img/1.jpg)",
-      //     backgroundPosition: 'center',
-      //     backgroundSize    : 'cover',
-      //     backgroundRepeat  : 'no-repeat'
-      // }}
-    >
+      className={style.top}>
       <div className="container">
         <div className={style.inner}>
           <h1 className={style.title}>Valentina CHEKHUNOVA.</h1>

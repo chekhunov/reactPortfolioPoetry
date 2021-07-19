@@ -8,9 +8,26 @@ import flavor1 from '../assets/flavor1.jpg';
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 function Poetry({loading, setLoading, appState}) {
-  const [contentItem, setContentItem] = React.useState(appState.content);
-  const [whomeItem, setWhomeItem] = React.useState(appState.whome);
-  const [whomeMenu, setWhomeMenu] = React.useState(appState.whomeMenu);
+  const [contentItem, setContentItem] = React.useState([]);
+const [whomeItem, setWhomeItem] = React.useState([]);
+const [whomeMenu, setWhomeMenu] = React.useState([]);
+  React.useEffect(() => {
+
+    async function fetchData() {
+
+      try {
+        setLoading(true)
+        setContentItem(appState.content)
+        setWhomeItem(appState.whome)
+        setWhomeMenu(appState.whomeMenu)
+setLoading(false)
+      } catch (e) {
+         alert('Не удалось загрузить стихи')
+      }
+    }
+      fetchData();
+    },[]);
+
   const [activeId, setActiveId] = React.useState(0);
   // const [cartItems, setCartItems] = React.useState([]);
   // const [isClickLogo, setIsClickLogo] = React.useState(false);//заглушка изза переиспользования меню
