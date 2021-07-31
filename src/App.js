@@ -6,11 +6,9 @@ import { Home } from './pages';
 const App = ({appState}) => {
   const [isLoading, setIsLoading] = React.useState(false);
 
-
-
     return ( <div className = "wrapper" >
 
-        <Header setIsLoading={setIsLoading} / >
+        <Header / >
           {isLoading ?
           (<Preloader isLoading={isLoading} />) :
         (<Home isLoading={isLoading} setIsLoading={setIsLoading} appState={appState} />)}

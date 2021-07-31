@@ -30,25 +30,18 @@ const items = [
     value: 'Галлерея',
     link: 'gallery',
 
-  },
-  {
-    id: 4,
-    value: 'Контакты',
-    link: 'contacts',
-
-  },
+  }
 ];
 
+
 function Header({}) {
-  // const [isClickLogo, setIsClickLogo] = React.useState(false);
   const [activeId, setActiveId] = React.useState(0);
 
   function activeLogo(){
     setActiveId(0);
-    document.body.classList.add('overflowe');
+    document.body.classList.add('overflow');
   }
 
-  // console.log(isClickLogo,'header')
   return (
     <header className={classNames(style.header, 'p-20')}>
       <div className="d-flex align-center justify-between">

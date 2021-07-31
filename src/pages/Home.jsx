@@ -8,7 +8,7 @@ import {Gallery} from '.'
 import style from './Home.module.scss';
 
 function Home({isLoading, setIsLoading, appState}) {
-  console.log(appState.content)
+
   return (
     <div className={style.wrapper}>
       <Route path="/reactPortfolioPoetry" exact>
@@ -20,7 +20,7 @@ function Home({isLoading, setIsLoading, appState}) {
       <Route path="/poetry" render={()=>(<Poetry loading={isLoading} setLoading={setIsLoading} appState={appState}/>)} />
 
       <Route path="/gallery" component={Gallery} />
-      // <Best />
+      {/* <Best /> */}
     </div>
   );
 }

@@ -3,6 +3,7 @@ import React from 'react';
 import style from './Preloader.module.scss';
 
 const Preloader = ({isLoading}) => {
+  console.log(isLoading,'preloader')
   return (
     <div className={classNames("preloader__inner", isLoading ? 'active' : "")} >
         <div className={classNames("circle", "circle-1")}></div>
