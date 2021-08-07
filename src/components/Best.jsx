@@ -2,19 +2,20 @@ import React from 'react';
 import style from './Best.module.scss';
 import axios from 'axios';
 import classNames from 'classnames';
-// import rosatext from '../assets/rosa-text.svg';
+import { useSelector } from 'react-redux';
 
 const Best = (props) => {
   const [bestitem, setBestitem] = React.useState([]);
+  const store = useSelector(store => store);
+
 
   React.useEffect(() => {
-    axios.get('top.json').then((res) => {
-      setBestitem(res.data.top);
-    });
+    setBestitem(store.top)
+    // axios.get('top.json').then((res) => {
+    //   setBestitem(res.data.top);
+    // });
   }, []);
 
-// const fil = bestitem.map((obj)=> obj.top)
-  // console.log(bestitem);
   return (
     <section
       className={style.best}
@@ -38,7 +39,10 @@ const Best = (props) => {
               <div className={style.meta}>
                 <div className={style.title}>{item.title}</div>
                 <div className={style.whom}>{item.id_whom}</div>
-                <img className={style.icon} src="../assets/rosa-text.svg" alt="rose" />
+                <img className={style.icon} src={`${process.env.PUBLIC_URL}/img/assets/rose-text.svg`} alt="rose" />
+                <div className={style.icon}>
+                 
+                </div>
               </div>
 
               <div className={style.innerText}>

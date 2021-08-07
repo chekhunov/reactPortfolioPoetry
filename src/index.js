@@ -7,10 +7,7 @@ import App from './App';
 import {Provider} from 'react-redux';
 import { createStore } from 'redux';
 
-const initialState = [
-  "hi gays",
-  "by man"
-]
+const initialState = state
 //подключение екшин к стейт редакса
 function poetryList(state = initialState, action) {
   console.log(action)
@@ -24,7 +21,9 @@ function poetryList(state = initialState, action) {
   return state
 }
 //createStore(тут переменную называют reducer)
-const store = createStore(poetryList);
+// const store = createStore(poetryList);
+//подключаем девтулз
+const store = createStore(poetryList, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 // const addPoetryBtn = document.querySelectorAll(".addBtn")[0];
 // const poetryInput = document.querySelectorAll('.addInputPoetry')[0]
@@ -51,11 +50,11 @@ const store = createStore(poetryList);
 // })
 // }
 
-// console.log(store.getState());
-
+console.log(store.getState());
+console.log(state)
 ReactDOM.render( <React.StrictMode >
     <Router >
-      <Provider store={store}>
+      <Provider store={store }>
       <App appState={state} / >
       </Provider>
     </Router>  

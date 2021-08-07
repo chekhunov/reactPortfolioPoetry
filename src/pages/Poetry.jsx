@@ -2,7 +2,7 @@ import React, { useCallback } from 'react';
 import axios from 'axios';
 import style from './Poetry.module.scss';
 import classNames from 'classnames';
-import { Menu } from '../components'
+import { Best, Menu } from '../components'
 import flavor1 from '../assets/flavor1.jpg';
 
 //decorator
@@ -45,7 +45,7 @@ function Poetry({loading, setLoading, appState, props}) {
     //очистить инпут
     poetryInput.value = '';
   }
-  console.log(store)
+
   return (
     <section className={classNames(style.poetry, "poetry")}>
       <div className={style.meta}>
@@ -53,8 +53,11 @@ function Poetry({loading, setLoading, appState, props}) {
         <div className={classNames(style.headline, 'title')}>Поэзия</div>
       </div>
       <div className={style.topMenu}></div>
+      <Best />
       <div className="container">
         <div className={style.wrapper}>
+
+          
 
           <label htmlFor="findtext">
             <input id="findtext" className="findPoetry" type="text" placeholder="найти стих" />
@@ -67,8 +70,8 @@ function Poetry({loading, setLoading, appState, props}) {
           </label>
 
           <ul>
-            {store.map((obj, index) =>
-            <li key={index}>{obj}</li>
+            {store.whome.map((obj, index) =>
+            <li key={index}>{obj.name}</li>
             )}
           </ul>
   
