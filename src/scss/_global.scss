@@ -145,6 +145,31 @@ $circle-margin: 7px;
     overflow: hidden;
 }
 
+.pagination {
+  margin-bottom: 20px!important;
+}
+
+.page-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: brown;
+  border-radius: 50%;
+
+}
+
+.page-link.page-item-active {
+  background-color: brown;
+  color: #ffffff;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: rgb(165, 70, 70);
+  }
+}
+
 .poetry {
   .wrapper-menu {
     padding: 50px 0;

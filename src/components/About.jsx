@@ -15,7 +15,7 @@ const About = () => {
       <div className={style.inner}>
         <div className="container">
 
-          <Route path="/about" exact component={Site} />
+          {/* <Route path="/about" exact component={Site} /> */}
 
           <div className={style.innerText}>
             <div className="title">Автобиография</div>

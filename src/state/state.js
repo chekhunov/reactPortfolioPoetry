@@ -39,8 +39,47 @@ let state = {
     {
         "id": 9,
         "img": "/img/testphoto/10.jpeg"
+    },
+    {
+        "id": 10,
+        "img": '/img/about.jpg',
+    },
+    {
+        "id": 11,
+        "img": "/img/testphoto/2.jpg"
+    },
+    {
+        "id": 12,
+        "img": "/img/testphoto/4.jpeg"
+    },
+    {
+        "id": 13,
+        "img": "/img/testphoto/3.jpeg"
+    },
+    {
+        "id": 14,
+        "img": "/img/testphoto/5.jpeg"
+    },
+    {
+        "id": 15,
+        "img": "/img/testphoto/6.jpeg"
+    },
+    {
+        "id": 16,
+        "img": "/img/testphoto/7.jpeg"
+    },
+    {
+        "id": 17,
+        "img": "/img/testphoto/8.jpeg"
+    },
+    {
+        "id": 18,
+        "img": "/img/testphoto/9.jpeg"
+    },
+    {
+        "id": 19,
+        "img": "/img/testphoto/10.jpeg"
     }
-
   ],
   top: [
     {

@@ -5,3 +5,4 @@ export { default as Menu } from './Menu';
 export { default as Site } from './Site';
 export { default as Preloader } from './Preloader';
 export { default as About } from './About';
+export { default as Pagination } from './pagination';
