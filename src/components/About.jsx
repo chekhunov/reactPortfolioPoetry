@@ -1,9 +1,9 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+// import { Route } from 'react-router-dom';
 import style from './About.module.scss';
 import about from '../assets/about.jpg';
 import abouttop from '../assets/new.jpg';
-import { Site} from './';
+// import { Site } from './';
 
 const About = () => {
   return (
@@ -14,12 +14,11 @@ const About = () => {
       </div>
       <div className={style.inner}>
         <div className="container">
-
           {/* <Route path="/about" exact component={Site} /> */}
 
           <div className={style.innerText}>
             <div className="title">Автобиография</div>
-            <img className={style.img} src={about} alt="photo user" />
+            <img className={style.img} src={about} alt="user" />
             <div className={style.text}>
               Родилась 7 августа 1955 г. на Урале, в г. Верхотуре Свердловской области. Прожила там
               восемь лет, закончила два класса. После переехала с родителями в Казахстан г.
