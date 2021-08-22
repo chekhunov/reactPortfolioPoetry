@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/reactPortfolioPoetry/static/css/main.85c1422e.chunk.css",
-    "main.js": "/reactPortfolioPoetry/static/js/main.0739b12c.chunk.js",
-    "main.js.map": "/reactPortfolioPoetry/static/js/main.0739b12c.chunk.js.map",
+    "main.css": "/reactPortfolioPoetry/static/css/main.cf6ecf69.chunk.css",
+    "main.js": "/reactPortfolioPoetry/static/js/main.ef8f9be9.chunk.js",
+    "main.js.map": "/reactPortfolioPoetry/static/js/main.ef8f9be9.chunk.js.map",
     "runtime-main.js": "/reactPortfolioPoetry/static/js/runtime-main.2bfe3526.js",
     "runtime-main.js.map": "/reactPortfolioPoetry/static/js/runtime-main.2bfe3526.js.map",
-    "static/js/2.9a95d1d3.chunk.js": "/reactPortfolioPoetry/static/js/2.9a95d1d3.chunk.js",
-    "static/js/2.9a95d1d3.chunk.js.map": "/reactPortfolioPoetry/static/js/2.9a95d1d3.chunk.js.map",
+    "static/js/2.02f1b4ff.chunk.js": "/reactPortfolioPoetry/static/js/2.02f1b4ff.chunk.js",
+    "static/js/2.02f1b4ff.chunk.js.map": "/reactPortfolioPoetry/static/js/2.02f1b4ff.chunk.js.map",
     "index.html": "/reactPortfolioPoetry/index.html",
-    "static/css/main.85c1422e.chunk.css.map": "/reactPortfolioPoetry/static/css/main.85c1422e.chunk.css.map",
-    "static/js/2.9a95d1d3.chunk.js.LICENSE.txt": "/reactPortfolioPoetry/static/js/2.9a95d1d3.chunk.js.LICENSE.txt",
+    "static/css/main.cf6ecf69.chunk.css.map": "/reactPortfolioPoetry/static/css/main.cf6ecf69.chunk.css.map",
+    "static/js/2.02f1b4ff.chunk.js.LICENSE.txt": "/reactPortfolioPoetry/static/js/2.02f1b4ff.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/reactPortfolioPoetry/static/media/Raleway-Light.f25e9b3a.ttf",
     "static/media/about.15f46e3a.jpg": "/reactPortfolioPoetry/static/media/about.15f46e3a.jpg",
     "static/media/Best.module.scss": "/reactPortfolioPoetry/static/media/decortop-left.ea24bd6b.svg",
@@ -21,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.2bfe3526.js",
-    "static/js/2.9a95d1d3.chunk.js",
-    "static/css/main.85c1422e.chunk.css",
-    "static/js/main.0739b12c.chunk.js"
+    "static/js/2.02f1b4ff.chunk.js",
+    "static/css/main.cf6ecf69.chunk.css",
+    "static/js/main.ef8f9be9.chunk.js"
   ]
 }
