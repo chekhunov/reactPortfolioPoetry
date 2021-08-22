@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/reactPortfolioPoetry/static/css/main.85c1422e.chunk.css",
-    "main.js": "/reactPortfolioPoetry/static/js/main.3c9e8947.chunk.js",
-    "main.js.map": "/reactPortfolioPoetry/static/js/main.3c9e8947.chunk.js.map",
+    "main.js": "/reactPortfolioPoetry/static/js/main.0739b12c.chunk.js",
+    "main.js.map": "/reactPortfolioPoetry/static/js/main.0739b12c.chunk.js.map",
     "runtime-main.js": "/reactPortfolioPoetry/static/js/runtime-main.2bfe3526.js",
     "runtime-main.js.map": "/reactPortfolioPoetry/static/js/runtime-main.2bfe3526.js.map",
     "static/js/2.9a95d1d3.chunk.js": "/reactPortfolioPoetry/static/js/2.9a95d1d3.chunk.js",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.2bfe3526.js",
     "static/js/2.9a95d1d3.chunk.js",
     "static/css/main.85c1422e.chunk.css",
-    "static/js/main.3c9e8947.chunk.js"
+    "static/js/main.0739b12c.chunk.js"
   ]
 }
