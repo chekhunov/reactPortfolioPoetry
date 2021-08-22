@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/reactPortfolioPoetry/static/css/main.cf6ecf69.chunk.css",
+    "main.css": "/reactPortfolioPoetry/static/css/main.d8306fee.chunk.css",
     "main.js": "/reactPortfolioPoetry/static/js/main.ef8f9be9.chunk.js",
     "main.js.map": "/reactPortfolioPoetry/static/js/main.ef8f9be9.chunk.js.map",
     "runtime-main.js": "/reactPortfolioPoetry/static/js/runtime-main.2bfe3526.js",
@@ -8,7 +8,7 @@
     "static/js/2.02f1b4ff.chunk.js": "/reactPortfolioPoetry/static/js/2.02f1b4ff.chunk.js",
     "static/js/2.02f1b4ff.chunk.js.map": "/reactPortfolioPoetry/static/js/2.02f1b4ff.chunk.js.map",
     "index.html": "/reactPortfolioPoetry/index.html",
-    "static/css/main.cf6ecf69.chunk.css.map": "/reactPortfolioPoetry/static/css/main.cf6ecf69.chunk.css.map",
+    "static/css/main.d8306fee.chunk.css.map": "/reactPortfolioPoetry/static/css/main.d8306fee.chunk.css.map",
     "static/js/2.02f1b4ff.chunk.js.LICENSE.txt": "/reactPortfolioPoetry/static/js/2.02f1b4ff.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/reactPortfolioPoetry/static/media/Raleway-Light.f25e9b3a.ttf",
     "static/media/about.15f46e3a.jpg": "/reactPortfolioPoetry/static/media/about.15f46e3a.jpg",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.2bfe3526.js",
     "static/js/2.02f1b4ff.chunk.js",
-    "static/css/main.cf6ecf69.chunk.css",
+    "static/css/main.d8306fee.chunk.css",
     "static/js/main.ef8f9be9.chunk.js"
   ]
 }
