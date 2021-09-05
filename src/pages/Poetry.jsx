@@ -1,12 +1,13 @@
-import React, { useCallback } from 'react';
-// import axios from 'axios';
+import React from 'react';
+import axios from 'axios';
 import style from './Poetry.module.scss';
 import classNames from 'classnames';
 import { Best, Menu } from '../components';
 import flavor1 from '../assets/flavor1.jpg';
 
 //decorator
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
+// import { useSelector, useDispatch } from 'react-redux';
 
 // const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -14,38 +15,48 @@ function Poetry({ loading, setLoading, appState, props }) {
   const [contentItem, setContentItem] = React.useState([]);
   const [whomeItem, setWhomeItem] = React.useState([]);
   const [whomeMenu, setWhomeMenu] = React.useState([]);
+  const [top, setTop] = React.useState([]);
 
   React.useEffect(() => {
-    let timerId = 0;
-    function fetchData() {
+    // let timerId = 0;
+    async function fetchData() {
       try {
+        setLoading(true)
+        const top = await axios.get('http://poetry.mocklab.io/top')
+        // const whome = await axios.get('http://poetry.mocklab.io/whome')
+        // http://poetry.mocklab.io
+
+       
         setContentItem(appState.content);
         setWhomeItem(appState.whome);
         setWhomeMenu(appState.whomeMenu);
+        // setWhomeItem(whome.data);
+        setTop(top.data);
       } catch (e) {
         alert('Не удалось загрузить стихи');
       }
     }
     fetchData();
-    return () => clearTimeout(timerId);
-  });
+    setLoading(false)
+    // return () => clearTimeout(timerId);
+  },[]);
 
   const [activeId, setActiveId] = React.useState(0);
-  const [poetryInput, setPoetryInput] = React.useState('');
+  // const [poetryInput, setPoetryInput] = React.useState('');
   const store = useSelector((store) => store);
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
-  const onAddPoetry = useCallback((poetryTitle) => {
-    dispatch({ type: 'ADD__POETRY', payload: poetryTitle });
-  }, []);
+  // const onAddPoetry = useCallback((poetryTitle) => {
+  //   dispatch({ type: 'ADD__POETRY', payload: poetryTitle });
+  // }, []);
 
-  function addPoetry() {
-    console.log('addtrack', poetryInput.value);
-    onAddPoetry(poetryInput.value);
-    //очистить инпут
-    poetryInput.value = '';
-  }
-
+  // function addPoetry() {
+  //   console.log('addtrack', poetryInput.value);
+  //   onAddPoetry(poetryInput.value);
+  //   //очистить инпут
+  //   poetryInput.value = '';
+  // }
+console.log(whomeItem, 'top')
   return (
     <section className={classNames(style.poetry, 'poetry')}>
       <div className={style.meta}>
@@ -61,7 +72,7 @@ function Poetry({ loading, setLoading, appState, props }) {
             <button className="findBtn">найти</button>
           </label>
 
-          <label htmlFor="addtext">
+          {/* <label htmlFor="addtext">
             <input
               ref={(input) => {
                 setPoetryInput(input);
@@ -71,7 +82,7 @@ function Poetry({ loading, setLoading, appState, props }) {
               placeholder="добавить стих"
             />
             <button onClick={addPoetry.bind(this)}>добавить</button>
-          </label>
+          </label> */}
 
           <ul>
             {store.whome.map((obj, index) => (
