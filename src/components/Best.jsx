@@ -8,12 +8,12 @@ const Best = (props) => {
   const [bestitem, setBestitem] = React.useState([]);
   const store = useSelector((store) => store);
 
-  React.useEffect(() => {
-    setBestitem(store.top);
+  // React.useEffect(() => {
+    // setBestitem(store.top);
     // axios.get('top.json').then((res) => {
     //   setBestitem(res.data.top);
     // });
-  }, [store.top]);
+  // }, [store.top]);
 
   return (
     <section
@@ -30,7 +30,7 @@ const Best = (props) => {
       <div className="subtitle">Вот некоторые из моих работ, которые для меня бесценны!</div>
 
       <div className={style.inner}>
-        {bestitem.map((item, index) => (
+        {props.top.map((item, index) => (
           <div className={classNames(style.effect7, style.item)} key={index}>
             <div className={style.contentBox}>
               <div className={style.img}></div>

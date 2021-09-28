@@ -1,14 +1,14 @@
 import React from 'react';
 import classNames from 'classnames';
-
+import state from '../state/state'
 import style from './Gallery.module.scss';
-import { useSelector } from 'react-redux';
+// import { useSelector } from 'react-redux';
 import Pagination from '../components/pagination';
 
 export default function Gallery() {
   // const [letsup,setLet] = React.useState({})
-  const store = useSelector((store) => store);
-  const [items] = React.useState(store.img);
+  // const store = useSelector((store) => store);
+  const [items] = React.useState(state.img);
   // const [images, setImages] = React.useState([]);
 
   // let list =[]

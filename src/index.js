@@ -5,25 +5,26 @@ import './scss/index.scss';
 import state from './state/state';
 import App from './App';
 import {Provider} from 'react-redux';
-import { createStore } from 'redux';
+import createStore from './store'
 
-const initialState = state
-//подключение екшин к стейт редакса
-function poetryList(state = initialState, action) {
-  console.log(action)
-  if(action.type === 'ADD__POETRY') {
-    //оператор ... spread 
-    return [
-      ...state,
-      action.payload
-    ]
-  }
-  return state
-}
+// const initialState = 'hi'
+// //подключение екшин к стейт редакса
+// function poetryList(state = initialState, action) {
+//   console.log(action)
+//   if(action.type === 'ADD__POETRY') {
+//     //оператор ... spread 
+//     return [
+//       ...state,
+//       action.payload
+//     ]
+//   }
+//   return state
+// }
+
 //createStore(тут переменную называют reducer)
 // const store = createStore(poetryList);
 //подключаем девтулз
-const store = createStore(poetryList, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+const store = createStore();
 
 // const addPoetryBtn = document.querySelectorAll(".addBtn")[0];
 // const poetryInput = document.querySelectorAll('.addInputPoetry')[0]
@@ -50,14 +51,15 @@ const store = createStore(poetryList, window.__REDUX_DEVTOOLS_EXTENSION__ && win
 // })
 // }
 
-console.log(store.getState());
+// console.log(store.getState());
 console.log(state)
-ReactDOM.render( <React.StrictMode >
+ReactDOM.render( 
+<React.StrictMode >
     <Router >
-      <Provider store={store }>
-      <App appState={state} / >
+      <Provider store = { store }>
+        <App appState={state} />
       </Provider>
     </Router>  
-    </React.StrictMode > ,
+</React.StrictMode > ,
     document.getElementById('root')
 );

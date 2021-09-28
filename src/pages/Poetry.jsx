@@ -12,34 +12,34 @@ import { useSelector } from 'react-redux';
 // const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 function Poetry({ loading, setLoading, appState, props }) {
-  const [contentItem, setContentItem] = React.useState([]);
-  const [whomeItem, setWhomeItem] = React.useState([]);
-  const [whomeMenu, setWhomeMenu] = React.useState([]);
+  
+  const [whomeItem, setWhomeItem] = React.useState([appState.whome]);
+  // const [whomeMenu, setWhomeMenu] = React.useState([]);
   const [top, setTop] = React.useState([]);
 
-  React.useEffect(() => {
-    // let timerId = 0;
-    async function fetchData() {
-      try {
-        setLoading(true)
-        const top = await axios.get('http://poetry.mocklab.io/top')
-        // const whome = await axios.get('http://poetry.mocklab.io/whome')
-        // http://poetry.mocklab.io
+  // React.useEffect(() => {
+  //   // let timerId = 0;
+  //   async function fetchData() {
+  //     try {
+  //       setLoading(true)
+  //       const top = await axios.get('http://poetry.mocklab.io/top')
+  //       // const whome = await axios.get('http://poetry.mocklab.io/whome')
+  //       // http://poetry.mocklab.io
 
        
-        setContentItem(appState.content);
-        setWhomeItem(appState.whome);
-        setWhomeMenu(appState.whomeMenu);
-        // setWhomeItem(whome.data);
-        setTop(top.data);
-      } catch (e) {
-        alert('Не удалось загрузить стихи');
-      }
-    }
-    fetchData();
-    setLoading(false)
-    // return () => clearTimeout(timerId);
-  },[]);
+  //       setContentItem(appState.content);
+  //       setWhomeItem(appState.whome);
+  //       setWhomeMenu(appState.whomeMenu);
+  //       // setWhomeItem(whome.data);
+  //       setTop(top.data);
+  //     } catch (e) {
+  //       alert('Не удалось загрузить стихи');
+  //     }
+  //   }
+  //   fetchData();
+  //   setLoading(false)
+  //   // return () => clearTimeout(timerId);
+  // },[]);
 
   const [activeId, setActiveId] = React.useState(0);
   // const [poetryInput, setPoetryInput] = React.useState('');
@@ -56,7 +56,8 @@ function Poetry({ loading, setLoading, appState, props }) {
   //   //очистить инпут
   //   poetryInput.value = '';
   // }
-console.log(whomeItem, 'top')
+  const [contentItem, setContentItem] = React.useState(store.poetry.poetry);
+  // console.log(contentItem,'store')
   return (
     <section className={classNames(style.poetry, 'poetry')}>
       <div className={style.meta}>
@@ -64,13 +65,15 @@ console.log(whomeItem, 'top')
         <div className={classNames(style.headline, 'title')}>Поэзия</div>
       </div>
       <div className={style.topMenu}></div>
-      <Best />
+
+      <Best top={appState.top}/>
+
       <div className="container">
         <div className={style.wrapper}>
-          <label htmlFor="findtext">
+          {/* <label htmlFor="findtext">
             <input id="findtext" className="findPoetry" type="text" placeholder="найти стих" />
             <button className="findBtn">найти</button>
-          </label>
+          </label> */}
 
           {/* <label htmlFor="addtext">
             <input
@@ -84,17 +87,17 @@ console.log(whomeItem, 'top')
             <button onClick={addPoetry.bind(this)}>добавить</button>
           </label> */}
 
-          <ul>
+          {/* <ul>
             {store.whome.map((obj, index) => (
               <li key={index}>{obj.name}</li>
             ))}
-          </ul>
+          </ul> */}
 
-          <Menu items={whomeMenu} activeId={activeId} setActiveId={setActiveId} />
+          <Menu items={appState.whomeMenu} activeId={activeId} setActiveId={setActiveId} />
 
           <div className={classNames(style.inner, 'poetry__inner')}>
             {contentItem.map((item, index) => (
-              <div className={classNames(style.item)} key={index}>
+              <div className={classNames(style.item)} key={item}>
                 <div className={style.contentBox}>
                   <div className={style.img}></div>
 
